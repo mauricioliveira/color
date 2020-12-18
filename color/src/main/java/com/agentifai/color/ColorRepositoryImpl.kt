@@ -1,7 +1,9 @@
 package com.agentifai.color
 
-class ColorRepositoryImpl {
+class ColorRepositoryImpl : ColorRepository {
 
-    fun getRedColor(): String = "#ff0000"
+    override fun getRedColor(): String = this.redColor
+
+    private var redColor: String = "#ff0000"
 
 }
